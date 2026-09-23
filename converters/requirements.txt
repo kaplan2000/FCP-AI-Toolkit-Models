@@ -1,0 +1,7 @@
+# Developer conversion only. Python is not a product dependency.
+numpy==1.26.4
+torch==2.5.1
+coremltools==8.1
+# Only needed to regenerate the already supplied fixed vectors:
+transformers==4.44.2
+safetensors==0.4.5

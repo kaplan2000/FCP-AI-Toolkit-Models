@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "path": "vendor/basicsr/rrdbnet_arch.py",
+      "bytes": 4621,
+      "sha256": "6aa8eb3f77e918b90eeff4ebfaf8745abe0c40eb8fcc03abbc1928693d70ab58",
+      "officialURL": "https://raw.githubusercontent.com/XPixelGroup/BasicSR/651835a1b9d38dbbdaf45750f56906be2364f01a/basicsr/archs/rrdbnet_arch.py",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "vendor/basicsr/arch_util.py",
+      "bytes": 11432,
+      "sha256": "45b322b874057c4bff382cc8f1b64554857b9aa4e0c47e73fe67e4afc0b28ac1",
+      "officialURL": "https://raw.githubusercontent.com/XPixelGroup/BasicSR/651835a1b9d38dbbdaf45750f56906be2364f01a/basicsr/archs/arch_util.py",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "vendor/instructir/models/instructir.py",
+      "bytes": 4553,
+      "sha256": "d0d428650ce625e78c923ab5c79f489fe87dcea0af891dd2ecf5386f3ec487c8",
+      "officialURL": "https://raw.githubusercontent.com/mv-lab/InstructIR/3c0299ff6dc32cdd218ec02abbb92febab6fcfb2/models/instructir.py",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "vendor/instructir/models/nafnet.py",
+      "bytes": 6549,
+      "sha256": "3b096fcf105cf8fa8688f9bfd9efc42ab97f8bfba805ed5349fe671f42231735",
+      "officialURL": "https://raw.githubusercontent.com/mv-lab/InstructIR/3c0299ff6dc32cdd218ec02abbb92febab6fcfb2/models/nafnet.py",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "vendor/instructir/models/nafnet_utils.py",
+      "bytes": 5808,
+      "sha256": "ed109141fe0b4bb49598781344e6e13e11caded92b591ea66480efae6ed8b10a",
+      "officialURL": "https://raw.githubusercontent.com/mv-lab/InstructIR/3c0299ff6dc32cdd218ec02abbb92febab6fcfb2/models/nafnet_utils.py",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "vendor/instructir/text/models.py",
+      "bytes": 2624,
+      "sha256": "d6648c9ad7f07bd208a737548490f7b8e13516a2b64a2678665fdaf022b7ab83",
+      "officialURL": "https://raw.githubusercontent.com/mv-lab/InstructIR/3c0299ff6dc32cdd218ec02abbb92febab6fcfb2/text/models.py",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "vendor/rife425/IFNet_HDv3.py",
+      "bytes": 6433,
+      "sha256": "655b4c772b037967b86c2dd31c8fa3b5323b79dd9a0e0088708d89149bbc8a32",
+      "officialArchiveURL": "https://drive.google.com/file/d/1ZKjcbmt1hypiFprJPIKW0Tt0lr_2i7bg/view",
+      "archiveSHA256": "e63d481b7ae5d4a4e6ad7ac5b410ff78f3bf7be3b51b2e38ca8152747abde5b4",
+      "archiveMember": "train_log/IFNet_HDv3.py",
+      "sourceScope": "Exact 4.25 model archive source; archive differs from repository source.",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "vendor/rife425/warplayer.py",
+      "bytes": 1209,
+      "sha256": "feb3af9475b724749b023d1913c3b135431eff13d0045b8efb472a699058385f",
+      "officialURL": "https://raw.githubusercontent.com/hzwer/Practical-RIFE/bbfd2ea90910789a860ea3e2b32a240cd577b75e/model/warplayer.py",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "vendor/fbcnn/network_fbcnn.py",
+      "bytes": 14063,
+      "sha256": "e1afc1f6483d57b774365467393216508f29a708b576dc973bad41bae67e8d03",
+      "officialURL": "https://raw.githubusercontent.com/jiaxi-jiang/FBCNN/54d1831927506b3247e2d4d245abb4f4dab1a1cd/models/network_fbcnn.py",
+      "modification": "Unchanged original; adaptations are applied by conversion recipe, with notice."
+    },
+    {
+      "path": "LICENSES/Real-ESRGAN-BSD-3-Clause.txt",
+      "bytes": 1519,
+      "sha256": "4a699ec4863d96a91fc265948a0c90033f7e8735d515524dcf3444736406e0c2",
+      "officialURL": "https://raw.githubusercontent.com/xinntao/Real-ESRGAN/a4abfb2979a7bbff3f69f58f58ae324608821e27/LICENSE"
+    },
+    {
+      "path": "LICENSES/BasicSR-Apache-2.0.txt",
+      "bytes": 11350,
+      "sha256": "5447872f21ddc29dc0dc060d5c885513c01c904e9da9931bba69898a6fb4d415",
+      "officialURL": "https://raw.githubusercontent.com/XPixelGroup/BasicSR/651835a1b9d38dbbdaf45750f56906be2364f01a/LICENSE.txt"
+    },
+    {
+      "path": "LICENSES/InstructIR-MIT.txt",
+      "bytes": 1072,
+      "sha256": "d48e9c2a603ed556992535bc0ed51a6f7700bfe3fe857a83e5d3e5dd46d57b88",
+      "officialURL": "https://raw.githubusercontent.com/mv-lab/InstructIR/3c0299ff6dc32cdd218ec02abbb92febab6fcfb2/LICENSE"
+    },
+    {
+      "path": "LICENSES/NAFNet-MIT-and-BasicSR-Apache-2.0.txt",
+      "bytes": 12466,
+      "sha256": "a29ecef3456149898f08e4c71b11b33e7d333664e087bc212e84e18ddd6599ad",
+      "officialURL": "https://raw.githubusercontent.com/megvii-research/NAFNet/2b4af71ebe098a92a75910c233a3965a3e93ede4/LICENSE"
+    },
+    {
+      "path": "LICENSES/BGE-micro-v2-MIT.txt",
+      "bytes": 1073,
+      "sha256": "64dd9288bb910aeec27deb6f1c170f869eae95dd44e3a42fdc5640635decfdce",
+      "officialURL": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/LICENSE"
+    },
+    {
+      "path": "LICENSES/Practical-RIFE-MIT.txt",
+      "bytes": 1062,
+      "sha256": "7932fb49341512b959b1744a6d9cbb39e5a1ec89da438a34d0454d5d8df9fecd",
+      "officialURL": "https://raw.githubusercontent.com/hzwer/Practical-RIFE/bbfd2ea90910789a860ea3e2b32a240cd577b75e/LICENSE"
+    },
+    {
+      "path": "LICENSES/FBCNN-Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "officialURL": "https://raw.githubusercontent.com/jiaxi-jiang/FBCNN/54d1831927506b3247e2d4d245abb4f4dab1a1cd/LICENSE"
+    },
+    {
+      "path": "LICENSES/KAIR-MIT.txt",
+      "bytes": 1066,
+      "sha256": "448e69b705d64f21bf8cb86562301e0edd99ac79026064ddd75af8242b067be5",
+      "officialURL": "https://raw.githubusercontent.com/cszn/KAIR/fc1732f4a4514e42ce15e5b3a1e18c828af47a1e/LICENSE"
+    }
+  ]
+}

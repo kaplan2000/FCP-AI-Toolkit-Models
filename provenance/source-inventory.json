@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "scope": "Public files excluding this inventory/audit and Git metadata. No package binary is committed; release file hashes live in release-assets.json.",
+  "files": [
+    {
+      "path": "LICENSES/BGE-micro-v2-MIT.txt",
+      "bytes": 1073,
+      "sha256": "64dd9288bb910aeec27deb6f1c170f869eae95dd44e3a42fdc5640635decfdce"
+    },
+    {
+      "path": "LICENSES/BasicSR-Apache-2.0.txt",
+      "bytes": 11350,
+      "sha256": "5447872f21ddc29dc0dc060d5c885513c01c904e9da9931bba69898a6fb4d415"
+    },
+    {
+      "path": "LICENSES/CONVERTERS-MIT.txt",
+      "bytes": 1084,
+      "sha256": "4d731a3d61792b41293a667c6e686c04a381063b66ab57b4af109a59558ad64b"
+    },
+    {
+      "path": "LICENSES/FBCNN-Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "LICENSES/InstructIR-MIT.txt",
+      "bytes": 1072,
+      "sha256": "d48e9c2a603ed556992535bc0ed51a6f7700bfe3fe857a83e5d3e5dd46d57b88"
+    },
+    {
+      "path": "LICENSES/KAIR-MIT.txt",
+      "bytes": 1066,
+      "sha256": "448e69b705d64f21bf8cb86562301e0edd99ac79026064ddd75af8242b067be5"
+    },
+    {
+      "path": "LICENSES/NAFNet-MIT-and-BasicSR-Apache-2.0.txt",
+      "bytes": 12466,
+      "sha256": "a29ecef3456149898f08e4c71b11b33e7d333664e087bc212e84e18ddd6599ad"
+    },
+    {
+      "path": "LICENSES/Practical-RIFE-MIT.txt",
+      "bytes": 1062,
+      "sha256": "7932fb49341512b959b1744a6d9cbb39e5a1ec89da438a34d0454d5d8df9fecd"
+    },
+    {
+      "path": "LICENSES/Real-ESRGAN-BSD-3-Clause.txt",
+      "bytes": 1519,
+      "sha256": "4a699ec4863d96a91fc265948a0c90033f7e8735d515524dcf3444736406e0c2"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 3053,
+      "sha256": "c3ca00899141efdd7c2c09b2c308edc6c5ebb2e1733a26471f4918136ba9aa23"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5142,
+      "sha256": "c4227606050b0836bf8fb9d1e5b4df4579186306699444007d0bfa337a3fe84d"
+    },
+    {
+      "path": "converters/README.md",
+      "bytes": 4149,
+      "sha256": "0d247356a51ab74ef0e43b37cc5d2ff948c33dbde6cd6f0255a81d1001aeeae4"
+    },
+    {
+      "path": "converters/convert.py",
+      "bytes": 8812,
+      "sha256": "c80529d3813807e4fe52f352adb14b580b4e45fc110ab7c991ee1468f1691724"
+    },
+    {
+      "path": "converters/prepare_vectors.py",
+      "bytes": 4036,
+      "sha256": "8270ede62e76f3d93a38129a9b1f13af29285904942380f82950eb19e112822e"
+    },
+    {
+      "path": "converters/requirements.txt",
+      "bytes": 213,
+      "sha256": "a8f2edfbd10c8e47752cde06c4817adf06ea6e37716d72090889391779c12c77"
+    },
+    {
+      "path": "provenance/fixed-task-embeddings.json",
+      "bytes": 18893,
+      "sha256": "d16c8bf98475fe82c2e3274415d12ed5b469d5ace50e1a1952742f5089cd450b"
+    },
+    {
+      "path": "provenance/instructir-upstream-inputs.json",
+      "bytes": 3106,
+      "sha256": "1349a6f4656f79ac420ad2fe0dd4deb895b61621a12995a07970f677c3377f16"
+    },
+    {
+      "path": "provenance/models.json",
+      "bytes": 14412,
+      "sha256": "268ff64207fa43d26b67d90a09e0f26a8d99a425b7df719bf3e11b3735b6ec46"
+    },
+    {
+      "path": "provenance/release-assets.json",
+      "bytes": 5477,
+      "sha256": "23b08ca55250a2d589dfb8fac6dfb165dcca2b72e1e27b47545724f4e366e9ce"
+    },
+    {
+      "path": "provenance/upstream-files.json",
+      "bytes": 6282,
+      "sha256": "5267b16aadc59a482d66708e8e97e2931f12078d3d8d92b0f50824f732f4cae1"
+    },
+    {
+      "path": "vendor/basicsr/arch_util.py",
+      "bytes": 11432,
+      "sha256": "45b322b874057c4bff382cc8f1b64554857b9aa4e0c47e73fe67e4afc0b28ac1"
+    },
+    {
+      "path": "vendor/basicsr/rrdbnet_arch.py",
+      "bytes": 4621,
+      "sha256": "6aa8eb3f77e918b90eeff4ebfaf8745abe0c40eb8fcc03abbc1928693d70ab58"
+    },
+    {
+      "path": "vendor/fbcnn/network_fbcnn.py",
+      "bytes": 14063,
+      "sha256": "e1afc1f6483d57b774365467393216508f29a708b576dc973bad41bae67e8d03"
+    },
+    {
+      "path": "vendor/instructir/models/instructir.py",
+      "bytes": 4553,
+      "sha256": "d0d428650ce625e78c923ab5c79f489fe87dcea0af891dd2ecf5386f3ec487c8"
+    },
+    {
+      "path": "vendor/instructir/models/nafnet.py",
+      "bytes": 6549,
+      "sha256": "3b096fcf105cf8fa8688f9bfd9efc42ab97f8bfba805ed5349fe671f42231735"
+    },
+    {
+      "path": "vendor/instructir/models/nafnet_utils.py",
+      "bytes": 5808,
+      "sha256": "ed109141fe0b4bb49598781344e6e13e11caded92b591ea66480efae6ed8b10a"
+    },
+    {
+      "path": "vendor/instructir/text/models.py",
+      "bytes": 2624,
+      "sha256": "d6648c9ad7f07bd208a737548490f7b8e13516a2b64a2678665fdaf022b7ab83"
+    },
+    {
+      "path": "vendor/rife425/IFNet_HDv3.py",
+      "bytes": 6433,
+      "sha256": "655b4c772b037967b86c2dd31c8fa3b5323b79dd9a0e0088708d89149bbc8a32"
+    },
+    {
+      "path": "vendor/rife425/warplayer.py",
+      "bytes": 1209,
+      "sha256": "feb3af9475b724749b023d1913c3b135431eff13d0045b8efb472a699058385f"
+    }
+  ]
+}

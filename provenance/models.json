@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "tag": "v1.2-prototype-20260923.1",
+  "distributionStatus": "staged prototype; publication/availability is separately verified",
+  "models": [
+    {
+      "recipeKey": "x4plus",
+      "variant": "realesrgan-x4plus-tile256-fp16-macos13",
+      "repo": "https://github.com/xinntao/Real-ESRGAN",
+      "revision": "a4abfb2979a7bbff3f69f58f58ae324608821e27",
+      "architectureRepo": "https://github.com/XPixelGroup/BasicSR",
+      "architectureRevision": "651835a1b9d38dbbdaf45750f56906be2364f01a",
+      "checkpoint": {
+        "filename": "RealESRGAN_x4plus.pth",
+        "officialURL": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
+        "bytes": 67040989,
+        "sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1"
+      },
+      "licenses": [
+        "LICENSES/Real-ESRGAN-BSD-3-Clause.txt",
+        "LICENSES/BasicSR-Apache-2.0.txt"
+      ],
+      "weightLicenseEvidence": {
+        "kind": "project-license-scope-inference",
+        "basis": "Official checkpoint is distributed in the licensed official project release; no separate weight grant is asserted.",
+        "officialLicenseURL": "https://github.com/xinntao/Real-ESRGAN/blob/a4abfb2979a7bbff3f69f58f58ae324608821e27/LICENSE"
+      },
+      "originalRecipe": "qualification/convert_x4plus.py",
+      "originalArguments": [
+        "--size",
+        "256",
+        "--precision",
+        "fp16"
+      ],
+      "precision": "FP16 computation / Float32 I/O",
+      "sourceChanges": "AST-extract three exact BasicSR helpers; remove registry/training-package imports; strict params_ema checkpoint loading. No learned weights changed.",
+      "originalPackageMetadata": {
+        "shortDescription": "Research conversion; production quality and GPU execution not qualified",
+        "author": "Original model: Xintao Wang et al.; research conversion: FCP AI Toolkit",
+        "license": "",
+        "userDefined": {
+          "com.github.apple.coremltools.source_dialect": "TorchScript",
+          "com.github.apple.coremltools.version": "8.1",
+          "checkpoint_sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1",
+          "upstream_revision": "a4abfb2979a7bbff3f69f58f58ae324608821e27",
+          "com.github.apple.coremltools.source": "torch==2.5.1",
+          "basicsr_revision": "651835a1b9d38dbbdaf45750f56906be2364f01a"
+        }
+      },
+      "minimumGraphDeploymentTarget": "macOS13; this is not product OS/capacity qualification",
+      "originalRecipeSHA256": "21b8f4da00899768cadaf05a3b6ab4719d08e53f697a64ae932aacc6a8097e71",
+      "originalHelperRecipeIdentities": [],
+      "tools": {
+        "python": "3.12.13",
+        "torch": "2.5.1",
+        "coremltools": "8.1",
+        "numpy": "1.26.4",
+        "conversionHost": "Apple Silicon macOS26.5"
+      },
+      "prototypeOnly": true,
+      "publicRecipeValidation": "New portable recipe statically/syntax checked only; not executed or numerically certified during staging.",
+      "privateQualificationData": "Not included; no private media, traces, source/output tensor hashes or local paths are published.",
+      "packageFileInventory": "release-assets.json",
+      "licenseConditions": "Preserve full original licenses, copyright/notice text, provenance and changed-file disclosures. No upstream endorsement."
+    },
+    {
+      "recipeKey": "instructir",
+      "variant": "instructir-7d-flex16to3840-fp32-macos13",
+      "repo": "https://github.com/mv-lab/InstructIR",
+      "revision": "3c0299ff6dc32cdd218ec02abbb92febab6fcfb2",
+      "checkpoint": {
+        "filename": "im_instructir-7d.pt",
+        "officialURL": "https://huggingface.co/marcosv/InstructIR/resolve/faa7dcfaa04721d7e0e52d4dbef2abb5f5b5d07a/im_instructir-7d.pt",
+        "revision": "faa7dcfaa04721d7e0e52d4dbef2abb5f5b5d07a",
+        "bytes": 63627895,
+        "sha256": "f28d8f0f66ff57449ebe2be52241dfdd53a3dfab1003d63e65493f96ea152fd0"
+      },
+      "licenses": [
+        "LICENSES/InstructIR-MIT.txt",
+        "LICENSES/NAFNet-MIT-and-BasicSR-Apache-2.0.txt",
+        "LICENSES/BGE-micro-v2-MIT.txt"
+      ],
+      "weightLicenseEvidence": {
+        "kind": "author-model-repository-license",
+        "license": "MIT",
+        "officialModelCardURL": "https://huggingface.co/marcosv/InstructIR/blob/faa7dcfaa04721d7e0e52d4dbef2abb5f5b5d07a/README.md"
+      },
+      "originalRecipe": "qualification/convert_instructir_flexible.py",
+      "originalArguments": [],
+      "precision": "FP32 computation / Float32 I/O",
+      "sourceChanges": "Equivalent explicit LayerNorm forward; identity check_image_size only on caller-zero-padded multiples of16; dynamic global pooling retained; fixed official task vectors. No learned weights changed.",
+      "shapeRangeNotice": "16..3840 per axis is graph syntax, not verified operating capacity. Caller validates original long edge<=3840 and pixels<=8294400, pads bottom/right to16 and crops output exactly. Prototype product must impose its smaller verified capacity.",
+      "originalPackageMetadata": {
+        "shortDescription": "Research flexible InstructIR; external exact zero pad16/crop and shape guards required",
+        "author": "",
+        "license": "",
+        "userDefined": {
+          "embedding_file_sha256": "d16c8bf98475fe82c2e3274415d12ed5b469d5ace50e1a1952742f5089cd450b",
+          "com.github.apple.coremltools.source_dialect": "TorchScript",
+          "com.github.apple.coremltools.source": "torch==2.5.1",
+          "com.github.apple.coremltools.version": "8.1"
+        }
+      },
+      "minimumGraphDeploymentTarget": "macOS13; this is not product OS/capacity qualification",
+      "originalRecipeSHA256": "d10801917ef748c555ae50593e8381a85bc8975eb6df96037f92d0c1fa40e300",
+      "originalHelperRecipeIdentities": [
+        {
+          "name": "qualification/convert_instructir.py",
+          "sha256": "da94396d9b1cbaabdb5afd750f4f1a002581b281a39bf636ad4fbdc60b01ea74"
+        }
+      ],
+      "tools": {
+        "python": "3.12.13",
+        "torch": "2.5.1",
+        "coremltools": "8.1",
+        "numpy": "1.26.4",
+        "conversionHost": "Apple Silicon macOS26.5"
+      },
+      "prototypeOnly": true,
+      "publicRecipeValidation": "New portable recipe statically/syntax checked only; not executed or numerically certified during staging.",
+      "privateQualificationData": "Not included; no private media, traces, source/output tensor hashes or local paths are published.",
+      "packageFileInventory": "release-assets.json",
+      "licenseConditions": "Preserve full original licenses, copyright/notice text, provenance and changed-file disclosures. No upstream endorsement."
+    },
+    {
+      "recipeKey": "rife",
+      "variant": "rife425-tile512-fp32-macos13",
+      "repo": "https://github.com/hzwer/Practical-RIFE",
+      "revision": "bbfd2ea90910789a860ea3e2b32a240cd577b75e",
+      "checkpoint": {
+        "filename": "flownet.pkl",
+        "archiveMember": "train_log/flownet.pkl",
+        "officialArchiveURL": "https://drive.google.com/file/d/1ZKjcbmt1hypiFprJPIKW0Tt0lr_2i7bg/view",
+        "archiveBytes": 22919050,
+        "archiveSHA256": "e63d481b7ae5d4a4e6ad7ac5b410ff78f3bf7be3b51b2e38ca8152747abde5b4",
+        "bytes": 24636301,
+        "sha256": "6615790efd627772917205db291f51cd392528a157ecbb2ecaeec3bff8eb6de2"
+      },
+      "licenses": [
+        "LICENSES/Practical-RIFE-MIT.txt"
+      ],
+      "weightLicenseEvidence": {
+        "kind": "explicit-model-statement",
+        "license": "MIT",
+        "officialStatementURL": "https://github.com/hzwer/Practical-RIFE/blob/bbfd2ea90910789a860ea3e2b32a240cd577b75e/README.md#trained-model",
+        "scopeStatement": "The content of these links is under the same MIT license as this project."
+      },
+      "originalRecipe": "scripts/convert_restoration.py",
+      "originalArguments": [
+        "rife425",
+        "--size",
+        "512",
+        "--precision",
+        "fp32"
+      ],
+      "precision": "FP32 computation / Float32 I/O",
+      "sourceChanges": "Exact IFNet from4.25 model archive and pinned warp helper; DataParallel prefix removal; only documented unused teacher/caltime entries omitted; remaining strict load. Final RGB selected with explicit [16,8,4,2,1] scales and dynamic timestep tensor.",
+      "capacityNotice": "512 context is fixed. It does not establish 720p/4K full-frame or tiled motion qualification. Endpoint/cut/rational-time policies remain outside graph.",
+      "originalPackageMetadata": {
+        "shortDescription": "Research only; no product quality or redistribution approval",
+        "author": "",
+        "license": "",
+        "userDefined": {
+          "com.github.apple.coremltools.source_dialect": "TorchScript",
+          "checkpoint_sha256": "6615790efd627772917205db291f51cd392528a157ecbb2ecaeec3bff8eb6de2",
+          "com.github.apple.coremltools.source": "torch==2.5.1",
+          "com.github.apple.coremltools.version": "8.1"
+        }
+      },
+      "minimumGraphDeploymentTarget": "macOS13; this is not product OS/capacity qualification",
+      "originalRecipeSHA256": "c0c6b62165f30ab55d31950650d503753d99a6cd4513f1bcd399ef7ae1ca3fac",
+      "originalHelperRecipeIdentities": [],
+      "tools": {
+        "python": "3.12.13",
+        "torch": "2.5.1",
+        "coremltools": "8.1",
+        "numpy": "1.26.4",
+        "conversionHost": "Apple Silicon macOS26.5"
+      },
+      "prototypeOnly": true,
+      "publicRecipeValidation": "New portable recipe statically/syntax checked only; not executed or numerically certified during staging.",
+      "privateQualificationData": "Not included; no private media, traces, source/output tensor hashes or local paths are published.",
+      "packageFileInventory": "release-assets.json",
+      "licenseConditions": "Preserve full original licenses, copyright/notice text, provenance and changed-file disclosures. No upstream endorsement."
+    },
+    {
+      "recipeKey": "fbcnn",
+      "variant": "fbcnn-color-blind-512-fp32-macos13",
+      "repo": "https://github.com/jiaxi-jiang/FBCNN",
+      "revision": "54d1831927506b3247e2d4d245abb4f4dab1a1cd",
+      "checkpoint": {
+        "filename": "fbcnn_color.pth",
+        "officialURL": "https://github.com/jiaxi-jiang/FBCNN/releases/download/v1.0/fbcnn_color.pth",
+        "bytes": 287755111,
+        "sha256": "8b0e4ef23d59cf7ac934a342cb31a17619e4fa4a0b3374a9d78c5174312387e8"
+      },
+      "licenses": [
+        "LICENSES/FBCNN-Apache-2.0.txt",
+        "LICENSES/BasicSR-Apache-2.0.txt",
+        "LICENSES/KAIR-MIT.txt"
+      ],
+      "weightLicenseEvidence": {
+        "kind": "project-license-scope-inference",
+        "basis": "Official checkpoint is distributed in the licensed official project release; no separate explicit weight grant is asserted.",
+        "officialLicenseURL": "https://github.com/jiaxi-jiang/FBCNN/blob/54d1831927506b3247e2d4d245abb4f4dab1a1cd/LICENSE",
+        "officialProjectScopeURL": "https://github.com/jiaxi-jiang/FBCNN/blob/54d1831927506b3247e2d4d245abb4f4dab1a1cd/README.md#license-and-acknowledgement"
+      },
+      "originalRecipe": "qualification/convert_fbcnn.py",
+      "originalArguments": "Output directory was supplied explicitly; local qualification paths are omitted.",
+      "precision": "FP32 computation / Float32 I/O",
+      "sourceChanges": "Remove only unused torchvision import. Strictly load official colour checkpoint. Trace blind qf_input=None branch without override; output RGB and official blind QF latent.",
+      "experimental": true,
+      "defaultEnabled": false,
+      "capacityNotice": "Exactly512 RGB; no arbitrary-size tile/full-frame guarantee. Upstream video-detail quality failure is retained.",
+      "originalPackageMetadata": {
+        "shortDescription": "Experimental FBCNN blind JPEG artifact restoration; fixed512 RGB; quality gates failed; default OFF",
+        "author": "",
+        "license": "Apache-2.0 project license; official release weights; no separate weight grant",
+        "userDefined": {
+          "weight_sha256": "8b0e4ef23d59cf7ac934a342cb31a17619e4fa4a0b3374a9d78c5174312387e8",
+          "qf_mode": "official blind; no override",
+          "default_enabled": "false",
+          "com.github.apple.coremltools.version": "8.1",
+          "com.github.apple.coremltools.source_dialect": "TorchScript",
+          "experimental": "true",
+          "source_revision": "54d1831927506b3247e2d4d245abb4f4dab1a1cd",
+          "minimum_macos": "13",
+          "com.github.apple.coremltools.source": "torch==2.5.1"
+        }
+      },
+      "minimumGraphDeploymentTarget": "macOS13; this is not product OS/capacity qualification",
+      "originalRecipeSHA256": "c257770466f219c77a9af29bcd86c9b924c0c254bab7299e6a78a5905f6ae163",
+      "originalHelperRecipeIdentities": [
+        {
+          "name": "qualification/car_cpu_reference.py",
+          "sha256": "2ebc7c30b59e0a86b7a00bdf706fdaf067962148bf65c4ddd8c8c478645743c2"
+        }
+      ],
+      "tools": {
+        "python": "3.12.13",
+        "torch": "2.5.1",
+        "coremltools": "8.1",
+        "numpy": "1.26.4",
+        "conversionHost": "Apple Silicon macOS26.5"
+      },
+      "prototypeOnly": true,
+      "publicRecipeValidation": "New portable recipe statically/syntax checked only; not executed or numerically certified during staging.",
+      "privateQualificationData": "Not included; no private media, traces, source/output tensor hashes or local paths are published.",
+      "packageFileInventory": "release-assets.json",
+      "licenseConditions": "Preserve full original licenses, copyright/notice text, provenance and changed-file disclosures. No upstream endorsement."
+    }
+  ],
+  "fixedTaskVectors": {
+    "path": "provenance/fixed-task-embeddings.json",
+    "bytes": 18893,
+    "sha256": "d16c8bf98475fe82c2e3274415d12ed5b469d5ace50e1a1952742f5089cd450b",
+    "derivedFrom": "Official InstructIR head and TaylorAI BGE-micro-v2, exact public prompts; no image data.",
+    "taskTensorHashes": {
+      "denoise": "c39560dec97996b219feb98330ea7cefeef4f9fe435983b1c1bdf744ccf4ac1f",
+      "deblur": "dc8cddaa13270104253394b4af5e95660043cbb0ae9a5664d7515e08cc92ba12"
+    },
+    "upstreamInputs": "instructir-upstream-inputs.json"
+  },
+  "reproductionScope": "Architecture/weights/conversion recipe. Serialized package bytes may differ with compiler, trace inputs and module naming; new bytes require fresh validation."
+}

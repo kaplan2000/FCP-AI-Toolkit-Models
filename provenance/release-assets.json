@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "tag": "v1.2-prototype-20260923.1",
+  "scope": "Public prototype model files. Inventory does not assert publication, download availability or product eligibility.",
+  "totalAssetBytes": 410719989,
+  "packages": [
+    {
+      "variant": "realesrgan-x4plus-tile256-fp16-macos13",
+      "packageDirectoryName": "realesrgan-x4plus-tile256-fp16-macos13.mlpackage",
+      "totalFileBytes": 34090334,
+      "files": [
+        {
+          "variant": "realesrgan-x4plus-tile256-fp16-macos13",
+          "assetName": "realesrgan-x4plus-tile256-fp16-macos13--model.mlmodel",
+          "packageRelativePath": "Data/com.apple.CoreML/model.mlmodel",
+          "bytes": 648821,
+          "sha256": "e0e2a9a6b56ab78e78472981dd5ae07593ea4034c5027161fbe1e084206d96c3"
+        },
+        {
+          "variant": "realesrgan-x4plus-tile256-fp16-macos13",
+          "assetName": "realesrgan-x4plus-tile256-fp16-macos13--weight.bin",
+          "packageRelativePath": "Data/com.apple.CoreML/weights/weight.bin",
+          "bytes": 33440896,
+          "sha256": "b0771b2a3874414cc1bc409300447a3398f8096fd92515b27f348d1137c6db3e"
+        },
+        {
+          "variant": "realesrgan-x4plus-tile256-fp16-macos13",
+          "assetName": "realesrgan-x4plus-tile256-fp16-macos13--Manifest.json",
+          "packageRelativePath": "Manifest.json",
+          "bytes": 617,
+          "sha256": "9d7242b8747fd8c444f2f2d222350bb1188374805e20ae8d596e90f0d7fa4722"
+        }
+      ]
+    },
+    {
+      "variant": "instructir-7d-flex16to3840-fp32-macos13",
+      "packageDirectoryName": "instructir-7d-flex16to3840-fp32-macos13.mlpackage",
+      "totalFileBytes": 63920446,
+      "files": [
+        {
+          "variant": "instructir-7d-flex16to3840-fp32-macos13",
+          "assetName": "instructir-7d-flex16to3840-fp32-macos13--model.mlmodel",
+          "packageRelativePath": "Data/com.apple.CoreML/model.mlmodel",
+          "bytes": 538325,
+          "sha256": "379affb0202d6013ff6e076a1a06e9ac9c6f1706f0215e689e305416d81e71e6"
+        },
+        {
+          "variant": "instructir-7d-flex16to3840-fp32-macos13",
+          "assetName": "instructir-7d-flex16to3840-fp32-macos13--weight.bin",
+          "packageRelativePath": "Data/com.apple.CoreML/weights/weight.bin",
+          "bytes": 63381504,
+          "sha256": "3015b9bf5307744614cfa01c98f6aaa0db53055e3e1e8cd80f8341abe220e598"
+        },
+        {
+          "variant": "instructir-7d-flex16to3840-fp32-macos13",
+          "assetName": "instructir-7d-flex16to3840-fp32-macos13--Manifest.json",
+          "packageRelativePath": "Manifest.json",
+          "bytes": 617,
+          "sha256": "8c48b480330ef13c750164f115b4cb7801fb6e82c055aa11f7e7e9be5e5af7f5"
+        }
+      ]
+    },
+    {
+      "variant": "rife425-tile512-fp32-macos13",
+      "packageDirectoryName": "rife425-tile512-fp32-macos13.mlpackage",
+      "totalFileBytes": 24910790,
+      "files": [
+        {
+          "variant": "rife425-tile512-fp32-macos13",
+          "assetName": "rife425-tile512-fp32-macos13--model.mlmodel",
+          "packageRelativePath": "Data/com.apple.CoreML/model.mlmodel",
+          "bytes": 162461,
+          "sha256": "078428cd3501137e98238c6ae10ca9d4382362ef1c0111c32ccbcf0ff01c1f90"
+        },
+        {
+          "variant": "rife425-tile512-fp32-macos13",
+          "assetName": "rife425-tile512-fp32-macos13--weight.bin",
+          "packageRelativePath": "Data/com.apple.CoreML/weights/weight.bin",
+          "bytes": 24747712,
+          "sha256": "10cdc52a735e9d87b982936ed2d7b7ea845487f0264db6b91e97a0412a30e2c8"
+        },
+        {
+          "variant": "rife425-tile512-fp32-macos13",
+          "assetName": "rife425-tile512-fp32-macos13--Manifest.json",
+          "packageRelativePath": "Manifest.json",
+          "bytes": 617,
+          "sha256": "95efe2ff242039d25072d5d6e59ed0ecbf271c2f26788afe6256ca1a0a5b9371"
+        }
+      ]
+    },
+    {
+      "variant": "fbcnn-color-blind-512-fp32-macos13",
+      "packageDirectoryName": "fbcnn-color-blind-512-fp32-macos13.mlpackage",
+      "totalFileBytes": 287779526,
+      "files": [
+        {
+          "variant": "fbcnn-color-blind-512-fp32-macos13",
+          "assetName": "fbcnn-color-blind-512-fp32-macos13--model.mlmodel",
+          "packageRelativePath": "Data/com.apple.CoreML/model.mlmodel",
+          "bytes": 120349,
+          "sha256": "1cdff8c5cb2e0b02f0c89fac94d5afdf153fdf952b2664a9fe7e7d3b76912adc"
+        },
+        {
+          "variant": "fbcnn-color-blind-512-fp32-macos13",
+          "assetName": "fbcnn-color-blind-512-fp32-macos13--weight.bin",
+          "packageRelativePath": "Data/com.apple.CoreML/weights/weight.bin",
+          "bytes": 287658560,
+          "sha256": "b03e6fca656c18b4f9af15585cc5e302c47ec4a448c1c4749683040b1e97cd55"
+        },
+        {
+          "variant": "fbcnn-color-blind-512-fp32-macos13",
+          "assetName": "fbcnn-color-blind-512-fp32-macos13--Manifest.json",
+          "packageRelativePath": "Manifest.json",
+          "bytes": 617,
+          "sha256": "4a7a0df29bef07362b01542fc046654b1bfc3d49ff29ee104d20e68d2a782541"
+        }
+      ]
+    }
+  ],
+  "supplementalAssets": [
+    {
+      "variant": "instructir-7d-flex16to3840-fp32-macos13",
+      "assetName": "instructir-7d-flex16to3840-fp32-macos13--fixed-task-embeddings.json",
+      "role": "fixed denoise/deblur runtime vectors; outside mlpackage",
+      "bytes": 18893,
+      "sha256": "d16c8bf98475fe82c2e3274415d12ed5b469d5ace50e1a1952742f5089cd450b"
+    }
+  ]
+}

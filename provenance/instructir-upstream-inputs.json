@@ -1,0 +1,67 @@
+{
+  "sourceRevision": "3c0299ff6dc32cdd218ec02abbb92febab6fcfb2",
+  "imageCheckpointRevision": "faa7dcfaa04721d7e0e52d4dbef2abb5f5b5d07a",
+  "languageRevision": "3edf6d7de0faa426b09780416fe61009f26ae589",
+  "inputs": [
+    {
+      "name": "im_instructir-7d.pt",
+      "url": "https://huggingface.co/marcosv/InstructIR/resolve/faa7dcfaa04721d7e0e52d4dbef2abb5f5b5d07a/im_instructir-7d.pt",
+      "sha256": "f28d8f0f66ff57449ebe2be52241dfdd53a3dfab1003d63e65493f96ea152fd0",
+      "bytes": 63627895
+    },
+    {
+      "name": "lm_instructir-7d.pt",
+      "url": "https://huggingface.co/marcosv/InstructIR/resolve/faa7dcfaa04721d7e0e52d4dbef2abb5f5b5d07a/lm_instructir-7d.pt",
+      "sha256": "b239e5d5dbc811813a90e709f9647dead0e35a96a294a7d6c5263da549016fe6",
+      "bytes": 403275
+    },
+    {
+      "name": "bge-micro-v2/model.safetensors",
+      "url": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/model.safetensors",
+      "sha256": "792472b64c3ca1c725e55f6a9d2a58143d4ce6b3ffde05bf55bc8427cb3733c8",
+      "bytes": 34785664
+    },
+    {
+      "name": "bge-micro-v2/config.json",
+      "url": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/config.json",
+      "sha256": "86d7047bf568a9263c7020fb4950741b19b1df3de3539385d83d9e3df1e56c5b",
+      "bytes": 745
+    },
+    {
+      "name": "bge-micro-v2/tokenizer.json",
+      "url": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/tokenizer.json",
+      "sha256": "cb374d6bc042c22455946f4e09a89d29882a199fdaf8fb25be00dc8b8857a448",
+      "bytes": 711661
+    },
+    {
+      "name": "bge-micro-v2/tokenizer_config.json",
+      "url": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/tokenizer_config.json",
+      "sha256": "dd949ead2951e7ea7d28aa67da9c351d09563b424bc9747115f4660a826390ea",
+      "bytes": 1564
+    },
+    {
+      "name": "bge-micro-v2/special_tokens_map.json",
+      "url": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/special_tokens_map.json",
+      "sha256": "cb63d0cbbf45160dc9cd786a257759593b798ae0c72957011016dbc3972df4e4",
+      "bytes": 228
+    },
+    {
+      "name": "bge-micro-v2/vocab.txt",
+      "url": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508
+    },
+    {
+      "name": "bge-micro-v2/added_tokens.json",
+      "url": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/added_tokens.json",
+      "sha256": "909e96cb32d92ce728a01bc99850cbba26196d74115c17ebeb019275412588f2",
+      "bytes": 82
+    },
+    {
+      "name": "bge-micro-v2/LICENSE",
+      "url": "https://huggingface.co/TaylorAI/bge-micro-v2/resolve/3edf6d7de0faa426b09780416fe61009f26ae589/LICENSE",
+      "sha256": "64dd9288bb910aeec27deb6f1c170f869eae95dd44e3a42fdc5640635decfdce",
+      "bytes": 1073
+    }
+  ]
+}
