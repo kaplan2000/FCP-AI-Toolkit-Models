@@ -38,3 +38,9 @@ The package bytes are preserved exactly. Some embedded descriptions reflect the 
 All 53 weight tensors were matched to the official checkpoint, accounting for NCNN FP16 truncation and denormal flushing; the conversion uses those exact stored convolution weights. See [provenance](provenance/animevideov3-x2.json) for checkpoint, source, package hashes and numerical parity. The model is specialized for anime/illustrated content and may smooth fine photographic texture. No universal quality improvement or long-video certification is claimed. Real-ESRGAN BSD-3-Clause covers the vendored SRVGG source; checkpoint redistribution follows the same project-license-scope inference as x4plus.
 
 Reproduction: Python 3.12, torch 2.5.1, coremltools 8.1, numpy 1.26.4. Run `python converters/convert_anime_x2.py --checkpoint /path/to/realesr-animevideov3.pth --ncnn-weights /path/to/realesr-animevideov3-x2.bin --output /new/output/directory`. Rebuilt bytes may differ and require fresh integrity/numerical checks.
+
+## Native 4× animevideov3 beta variant
+
+`v1.2-anime4x-20260925.1` adds a separate native 4× package using the same NCNN-matched official weights, with no output reduction. Float32 RGB `[1,3,256,256]` to `[1,3,1024,1024]`, FP16 internals. Use `converters/convert_anime_scales.py --scale 4 --checkpoint /path/to/realesr-animevideov3.pth --ncnn-weights /path/to/realesr-animevideov3-x2.bin --output /new/output`. The x2 and x4 NCNN binaries have the same weight hash. The previous 2× release is unchanged. See [4× provenance](provenance/animevideov3-x4.json).
+
+Use reflect halo32, core192 and crop-halo stitching, with no final resize. The app's 4K output boundary permits source long edge ≤960 and short edge ≤540. 8K video output is not qualified. Original Real-ESRGAN BSD-3-Clause notices and project-scope checkpoint coverage apply.

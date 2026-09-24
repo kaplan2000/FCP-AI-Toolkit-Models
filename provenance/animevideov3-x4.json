@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "checkpointSHA256": "b8a8376811077954d82ca3fcf476f1ac3da3e8a68a4f4d71363008000a18b75d",
+  "ncnnWeightsSHA256": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+  "officialSourceSHA256": "7419a75e789ca09295266563d74a6d7c08d6c24502af6b0a919b1811d0a0be59",
+  "verifiedWeightTensors": 53,
+  "ncnnWeightMatch": "all convolution weights match fp16 truncation/denormal flush of official checkpoint; fp32 biases and slopes exact; Core ML uses exact NCNN-stored convolution weights",
+  "resize": "none; native 4x",
+  "resizeMaxError": 0.0,
+  "conversionSeconds": 0.5444646670948714,
+  "firstPredictionSeconds": 0.1260420000180602,
+  "coremlTorchParity": {
+    "meanAbsoluteError": 0.0002972872171085328,
+    "p99": 0.0010726451873779297,
+    "max": 0.0031930208206176758
+  },
+  "input": [
+    1,
+    3,
+    256,
+    256
+  ],
+  "output": [
+    1,
+    3,
+    1024,
+    1024
+  ],
+  "files": [
+    {
+      "path": "Data/com.apple.CoreML/model.mlmodel",
+      "bytes": 31098,
+      "sha256": "f7d08c16234c8171e9bb73e3f76aaa9b62ca03c60f3e8d528a7f8c7c99ff7e6c",
+      "url": "https://github.com/kaplan2000/FCP-AI-Toolkit-Models/releases/download/v1.2-anime4x-20260925.1/realesr-animevideov3-x4-tile256-fp16--model.mlmodel"
+    },
+    {
+      "path": "Data/com.apple.CoreML/weights/weight.bin",
+      "bytes": 1246304,
+      "sha256": "10cc214c35971059dd5f9f6a003a71df51db93ae5efb91661b3413ab15cc7f81",
+      "url": "https://github.com/kaplan2000/FCP-AI-Toolkit-Models/releases/download/v1.2-anime4x-20260925.1/realesr-animevideov3-x4-tile256-fp16--weight.bin"
+    },
+    {
+      "path": "Manifest.json",
+      "bytes": 617,
+      "sha256": "8334e5812c87c9175d5c4d39b4b3619e7f0c1251d8a08acf3f1c97763945ed82",
+      "url": "https://github.com/kaplan2000/FCP-AI-Toolkit-Models/releases/download/v1.2-anime4x-20260925.1/realesr-animevideov3-x4-tile256-fp16--Manifest.json"
+    }
+  ],
+  "releaseTag": "v1.2-anime4x-20260925.1",
+  "packageDigest": "0c4ecdb8535da9e0dc0a36bb137b49b1470c669bb705595d79e4c50ab27aeda8"
+}
