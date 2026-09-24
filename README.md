@@ -30,3 +30,11 @@ The package bytes are preserved exactly. Some embedded descriptions reflect the 
 ## Developer reproduction
 
 [Conversion instructions](converters/README.md) use explicit checkpoint/output paths and the narrowly vendored official inference source. No private image, reference output, fixture hash, local test log, personal filesystem path, app implementation or credential is included. The portable recipes reconstruct the conversion operations; they were syntax/static-checked without rerunning conversion during staging. Compiler versions, trace inputs and serialization can affect emitted bytes, so regenerated packages require fresh hashes and numerical/native validation. The supplied release bytes are identified independently by the asset inventory.
+
+## animevideov3 2× beta model
+
+`v1.2-anime-20260924.1` adds the official Real-ESRGAN SRVGGNetCompact animevideov3 weights with the installed NCNN x2 graph semantics: internal 4×, bicubic half-pixel reduction to 2× before clipping. This is not a native 2× network. Float32 RGB NCHW input `[1,3,256,256]`, output `[1,3,512,512]`, FP16 internal computation. Reflected halo32, core192, crop-halo stitching; output is already 2× and must not be resized again. CPU+GPU Core ML inference remains local.
+
+All 53 weight tensors were matched to the official checkpoint, accounting for NCNN FP16 truncation and denormal flushing; the conversion uses those exact stored convolution weights. See [provenance](provenance/animevideov3-x2.json) for checkpoint, source, package hashes and numerical parity. The model is specialized for anime/illustrated content and may smooth fine photographic texture. No universal quality improvement or long-video certification is claimed. Real-ESRGAN BSD-3-Clause covers the vendored SRVGG source; checkpoint redistribution follows the same project-license-scope inference as x4plus.
+
+Reproduction: Python 3.12, torch 2.5.1, coremltools 8.1, numpy 1.26.4. Run `python converters/convert_anime_x2.py --checkpoint /path/to/realesr-animevideov3.pth --ncnn-weights /path/to/realesr-animevideov3-x2.bin --output /new/output/directory`. Rebuilt bytes may differ and require fresh integrity/numerical checks.

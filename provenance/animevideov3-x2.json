@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "checkpointSHA256": "b8a8376811077954d82ca3fcf476f1ac3da3e8a68a4f4d71363008000a18b75d",
+  "ncnnWeightsSHA256": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d",
+  "officialSourceSHA256": "7419a75e789ca09295266563d74a6d7c08d6c24502af6b0a919b1811d0a0be59",
+  "verifiedWeightTensors": 53,
+  "ncnnWeightMatch": "all convolution weights match fp16 truncation/denormal flush of official checkpoint; fp32 biases and slopes exact; Core ML uses exact NCNN-stored convolution weights",
+  "resize": "separable bicubic A=-0.75 half-pixel centers, replicate edges, no antialias, before clipping; matches installed x2 NCNN graph",
+  "resizeMaxError": 4.76837158203125e-07,
+  "conversionSeconds": 0.5448571250308305,
+  "firstPredictionSeconds": 0.3609430000651628,
+  "coremlTorchParity": {
+    "meanAbsoluteError": 0.0003233749303035438,
+    "p99": 0.0011670256871730068,
+    "max": 0.003387272357940674
+  },
+  "input": [
+    1,
+    3,
+    256,
+    256
+  ],
+  "output": [
+    1,
+    3,
+    512,
+    512
+  ],
+  "files": [
+    {
+      "path": "Data/com.apple.CoreML/model.mlmodel",
+      "bytes": 33177,
+      "sha256": "77891c072038be0e49330ffadac4c45e776029e8f6c34e763b1edc61018934c3",
+      "url": "https://github.com/kaplan2000/FCP-AI-Toolkit-Models/releases/download/v1.2-anime-20260924.1/realesr-animevideov3-x2-tile256-fp16--model.mlmodel"
+    },
+    {
+      "path": "Data/com.apple.CoreML/weights/weight.bin",
+      "bytes": 1246496,
+      "sha256": "4fad2f253139507c1d44aabea2539baa3d6fefab1f1b7c9cb28309a93fd528ae",
+      "url": "https://github.com/kaplan2000/FCP-AI-Toolkit-Models/releases/download/v1.2-anime-20260924.1/realesr-animevideov3-x2-tile256-fp16--weight.bin"
+    },
+    {
+      "path": "Manifest.json",
+      "bytes": 617,
+      "sha256": "df1eb38c8b0c6ec77c43edda67c48673828e4a8cb9389465df1d53e38648703e",
+      "url": "https://github.com/kaplan2000/FCP-AI-Toolkit-Models/releases/download/v1.2-anime-20260924.1/realesr-animevideov3-x2-tile256-fp16--Manifest.json"
+    }
+  ],
+  "releaseTag": "v1.2-anime-20260924.1",
+  "packageDigest": "5bb205c9395a67e971ab50d4f0a8f3a33f29f018dfd89e2d5ea6bd873a8eedbf"
+}
